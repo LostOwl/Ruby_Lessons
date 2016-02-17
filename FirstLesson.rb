@@ -70,4 +70,40 @@ my_hash.update(new_hash)
       #// Методы для класса Range
 
 my_range = (1 .. 10)  #// Метод, возвращающий максимальное значение диапазона
-my_range.max 
+my_range.max
+
+
+
+      "Модификация КОДА"
+
+results = [10, 2, 5, 12, 11, 11, 4]
+
+count = 1
+for sum in results
+  puts "Партия: #{count} / Выпало очков:#{sum}"
+  count = count + 1
+end
+
+
+    "Типы данных в реальном мире"
+
+"Туристическая группа" -- "Hash, Array"
+"Количества денег на счету в банке - Списка книг и их количства" -- "Hash"
+"Признак, есть ли у человека суперспособности" -- "Bullean, Hash witn bullean as a value"
+"Количество соток для участка" -- "Float"
+"Количество очков жизни игрока" -- "Fixnum"
+"Имя пользователя" -- "String"
+"Содержание поста" -- "String"
+"Возрастная категория" -- "Hash witn Range as a value"
+"Названия социальной сети, которое будет использоваться в коде по всему проекту" -- "I don't know"
+
+
+        "РАСШИРЕНИЕ КЛАССА String"
+
+class String
+  def my_delete value
+    self - value
+  end
+end
+
+"Oh no, it's not working".my_delete ("o")
